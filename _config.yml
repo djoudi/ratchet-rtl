@@ -1,0 +1,15 @@
+# Meta data
+name:         Ratchet-RTL
+authors:      Morteza Ansarinia
+description:  Build mobile apps with simple HTML, CSS, and JS components. Supports RTL.
+
+# Dependencies
+highlighter:  pygments
+
+# Permalinks
+permalink:    pretty
+
+# Server
+source:       docs
+port:         4000
+url:          http://goratchet.com
