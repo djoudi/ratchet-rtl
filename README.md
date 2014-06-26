@@ -1,9 +1,9 @@
-# Ratchet-RTL
+# Ratchet RTL
 
 
 Right to Left (RTL) Support to Build mobile apps with simple HTML, CSS, and JS components.
 
-Check @twbs/ratchet for more.
+**Check https://github.com/twbs/ratchet for more information on Ratchet**.
 
 
 ## Author
@@ -13,7 +13,7 @@ Check @twbs/ratchet for more.
 + [http://github.com/morteza](http://github.com/morteza)
 
 
-## Copyright and license
+## Copyright and License
 
 
 #### Ratchet RTL
