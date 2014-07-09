@@ -18,14 +18,12 @@
     "arabic"
   ],
   "main": [
-    "./dist/css/ratchet-rtl-ios.css",
-    "./dist/css/ratchet-rtl-android.js"
+    "./dist/css/ratchet-rtl.css"
   ],
   "ignore": [
-    "_config.yml",
     ".travis.yml",
     "CNAME",
     "CONTRIBUTING.md",
-    "docs"
+    "examples"
   ]
 }
