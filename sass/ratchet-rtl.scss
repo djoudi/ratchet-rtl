@@ -1,0 +1,17 @@
+@import "../ratchet/sass/mixins.scss";
+
+//
+// iOS theme
+// Visuals and interactions in the style of iOS
+//
+// --------------------------------------------------
+// RTL
+// --------------------------------------------------
+html,
+body {
+  direction: rtl;
+}
+
+input[type="search"]:focus {
+  text-align: right;
+}

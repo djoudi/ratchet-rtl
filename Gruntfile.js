@@ -36,7 +36,7 @@ module.exports = function(grunt) {
             ' */\n',
 
     clean: {
-      dist: ['<%= meta.distPath %>']
+      dist: ['dist/']
     },
 
     sass: {
@@ -47,8 +47,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'dist/css/<%= pkg.name %>-ios.css': 'sass/theme-ios-rtl.scss',
-          'dist/css/<%= pkg.name %>-android.css': 'sass/theme-android-rtl.scss'
+          'dist/css/<%= pkg.name %>.css': 'sass/<%= pkg.name %>.scss',
         }
       }
     },
@@ -59,8 +58,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'dist/css/<%= pkg.name %>-android.css': '<%= meta.distPath %>/css/<%= pkg.name %>-theme-android.css',
-          'dist/css/<%= pkg.name %>-ios.css': '<%= meta.distPath %>/css/<%= pkg.name %>-theme-ios.css'
+          'dist/css/<%= pkg.name %>.css': 'dist/css/<%= pkg.name %>.css'
         }
       }
     },
@@ -70,10 +68,9 @@ module.exports = function(grunt) {
         banner: '', // set to empty; see bellow
         keepSpecialComments: '*' // set to '*' because we already add the banner in sass
       },
-      theme: {
+      dist: {
         files: {
-          'dist/css/<%= pkg.name %>-ios.min.css': 'dist/css/<%= pkg.name %>-ios.css',
-          'dist/css/<%= pkg.name %>-android.min.css': 'dist/css/<%= pkg.name %>-android.css'
+          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css',
         }
       }
     }

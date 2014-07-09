@@ -12,8 +12,8 @@
   ],
   "homepage": "https://github.com/morteza/ratchet-rtl",
   "author": "Morteza Ansarinia <ansarinia@me.com>",
-  "style": "dist/css/ratchet.css",
-  "sass": "sass/ratchet.scss",
+  "style": "dist/css/ratchet-rtl.css",
+  "sass": "sass/ratchet-rtl.scss",
   "repository": {
     "type": "git",
     "url": "https://github.com/morteza/ratchet-rtl.git"
