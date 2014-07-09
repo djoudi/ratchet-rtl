@@ -1,4 +1,4 @@
-@import "mixins.scss";
+@import "../ratchet/sass/mixins.scss";
 
 //
 // iOS theme
@@ -28,6 +28,12 @@ $bar-tab-height:  50px !global;
 // iOS style transitions
 $timing-fuction: cubic-bezier(.1, .5, .1, 1) !global; // Inspired by @c2prods
 
+// RTL
+// --------------------------------------------------
+html,
+body {
+  direction: rtl;
+}
 
 // Base
 // --------------------------------------------------
@@ -357,7 +363,7 @@ input[type="search"] {
   border-radius: 6px;
 }
 input[type="search"]:focus {
-  text-align: left;
+  text-align: right;
 }
 select,
 textarea,
@@ -567,16 +573,16 @@ textarea,
 
     // Adding the overlay
     &.sliding-in,
-    &.right:not([class*="sliding-in"]) {
+    &.left:not([class*="sliding-in"]) {
       @include animation-name(fadeOverlay);
       @include animation-duration(.4s);
     }
 
-    &.right:not([class*="sliding-in"]) {
+    &.left:not([class*="sliding-in"]) {
       @include animation-direction(reverse);
     }
 
-    &.left {
+    &.right {
       @include transform(translate3d(-20%, 0, 0)); // Creates the parallax effect
     }
   }

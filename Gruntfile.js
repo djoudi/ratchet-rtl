@@ -23,7 +23,6 @@ module.exports = function(grunt) {
 
     // Metadata.
     meta: {
-      distPath:       'dist/'
     },
 
     banner: '/*!\n' +
@@ -48,8 +47,8 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          '<%= meta.distPath %>css/<%= pkg.name %>-theme-ios.css': 'sass/theme-ios-rtl.scss',
-          '<%= meta.distPath %>css/<%= pkg.name %>-theme-android.css': 'sass/theme-android-rtl.scss'
+          'dist/css/<%= pkg.name %>-ios.css': 'sass/theme-ios-rtl.scss',
+          'dist/css/<%= pkg.name %>-android.css': 'sass/theme-android-rtl.scss'
         }
       }
     },
@@ -60,8 +59,8 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          '<%= meta.distPath %>/css/<%= pkg.name %>-theme-android.css': '<%= meta.distPath %>/css/<%= pkg.name %>-theme-android.css',
-          '<%= meta.distPath %>/css/<%= pkg.name %>-theme-ios.css': '<%= meta.distPath %>/css/<%= pkg.name %>-theme-ios.css'
+          'dist/css/<%= pkg.name %>-android.css': '<%= meta.distPath %>/css/<%= pkg.name %>-theme-android.css',
+          'dist/css/<%= pkg.name %>-ios.css': '<%= meta.distPath %>/css/<%= pkg.name %>-theme-ios.css'
         }
       }
     },
@@ -73,8 +72,8 @@ module.exports = function(grunt) {
       },
       theme: {
         files: {
-          '<%= meta.distPath %>css/<%= pkg.name %>-theme-ios.min.css': '<%= meta.distPath %>css/<%= pkg.name %>-theme-ios.css',
-          '<%= meta.distPath %>css/<%= pkg.name %>-theme-android.min.css': '<%= meta.distPath %>css/<%= pkg.name %>-theme-android.css'
+          'dist/css/<%= pkg.name %>-ios.min.css': 'dist/css/<%= pkg.name %>-ios.css',
+          'dist/css/<%= pkg.name %>-android.min.css': 'dist/css/<%= pkg.name %>-android.css'
         }
       }
     }
@@ -87,7 +86,6 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('dist-css', ['sass', 'csscomb', 'cssmin']);
-  grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js']);
-  grunt.registerTask('build', ['dist']);
-  grunt.registerTask('default', ['dist']);
+  grunt.registerTask('build', ['dist-css']);
+  grunt.registerTask('default', ['dist-css']);
 };

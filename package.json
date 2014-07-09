@@ -10,8 +10,8 @@
     "mobile",
     "prototype"
   ],
-  "homepage": "http://cards.onto.ir",
-  "author": "Morteza Ansarinia",
+  "homepage": "https://github.com/morteza/ratchet-rtl",
+  "author": "Morteza Ansarinia <ansarinia@me.com>",
   "style": "dist/css/ratchet.css",
   "sass": "sass/ratchet.scss",
   "repository": {

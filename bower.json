@@ -1,6 +1,6 @@
 {
   "name": "ratchet-rtl",
-  "description": "Right to Lef6 support to Ratchet. Build mobile apps with simple HTML, CSS, and JS components.",
+  "description": "Right to Left support to Ratchet. Build mobile apps with simple HTML, CSS, and JS components.",
   "version": "2.0.2",
   "keywords": [
     "css",
@@ -18,8 +18,8 @@
     "arabic"
   ],
   "main": [
-    "./dist/css/ratchet-rtl.css",
-    "./dist/js/ratchet-rtl.js"
+    "./dist/css/ratchet-rtl-ios.css",
+    "./dist/css/ratchet-rtl-android.js"
   ],
   "ignore": [
     "_config.yml",
