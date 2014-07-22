@@ -8,7 +8,7 @@ Right to Left (RTL) Support to Build mobile apps with simple HTML, CSS, and JS c
 
 ## Author
 
-**Morteza Ansarinia** ([http://github.com/morteza](http://github.com/morteza))
+- **Morteza Ansarinia** ([http://github.com/morteza](http://github.com/morteza))
 
 
 ## Copyright and License
