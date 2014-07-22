@@ -15,3 +15,60 @@ body {
 input[type="search"]:focus {
   text-align: right;
 }
+
+//
+// Table views
+// --------------------------------------------------
+
+.table-view {
+  padding-left: auto;
+  padding-right: 0;
+}
+
+// Pad each table view item and add dividers
+.table-view-cell {
+  padding: 11px 15px 11px 65px;
+  // If it's a table view of links, make sure the child <a> takes up full table view item tap area (want to avoid selecting child buttons though)
+  > a:not(.btn) {
+    padding: inherit;
+    margin: -11px -15px -11px -65px; // Make the entire list item tappable.
+  }
+}
+
+
+// Table view dividers
+// --------------------------------------------------
+
+.table-view-divider {
+  padding-left: auto;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+
+// Table-views with media (images,avatars, icons)
+// --------------------------------------------------
+
+.table-view .media-object {
+  &.pull-left {
+    margin-right: 10px;
+  }
+  &.pull-right {
+    margin-left: 10px;
+  }
+}
+
+
+// Table-views with buttons, badges and toggles
+// --------------------------------------------------
+.table-view-cell,
+.table-view-cell > a {
+  > .btn,
+  > .badge,
+  > .toggle {
+    right: auto;
+    left: 15px;
+  }
+
+}

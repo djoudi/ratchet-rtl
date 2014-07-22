@@ -6,4 +6,4 @@
  *
  * v2.0.2 designed by @morteza.
  * =====================================================
- */body,html{direction:rtl}input[type=search]:focus{text-align:right}
+ */body,html{direction:rtl}input[type=search]:focus{text-align:right}.table-view{padding-right:0;padding-left:auto}.table-view-cell{padding:11px 15px 11px 65px}.table-view-cell>a:not(.btn){padding:inherit;margin:-11px -15px -11px -65px}.table-view-divider{padding-right:15px;padding-left:auto;margin-right:0;margin-left:auto}.table-view .media-object.pull-left{margin-right:10px}.table-view .media-object.pull-right{margin-left:10px}.table-view-cell>.badge,.table-view-cell>.btn,.table-view-cell>.toggle,.table-view-cell>a>.badge,.table-view-cell>a>.btn,.table-view-cell>a>.toggle{right:auto;left:15px}
