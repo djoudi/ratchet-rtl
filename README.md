@@ -3,14 +3,12 @@
 
 Right to Left (RTL) Support to Build mobile apps with simple HTML, CSS, and JS components.
 
-**Check https://github.com/twbs/ratchet for more information on Ratchet**.
+**Check http://goratchet.com for more information on Ratchet**.
 
 
 ## Author
 
-**Morteza Ansarinia**
-
-+ [http://github.com/morteza](http://github.com/morteza)
+**Morteza Ansarinia** ([http://github.com/morteza](http://github.com/morteza))
 
 
 ## Copyright and License
@@ -22,4 +20,3 @@ This work is licensed under the Creative Commons **Attribution-NonCommercial-Sha
 See the file [LICENSE.md](LICENSE.md) for the full license governing this project.
 
 Ratchet is licensed under the MIT License.
-
